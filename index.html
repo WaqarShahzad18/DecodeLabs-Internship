@@ -1,193 +1,442 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waqar Shahzad | Frontend Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
 
-<body>
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <h2 class="nav-logo">Waqar Shahzad</h2>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+html {
+    scroll-behavior: smooth;
+}
 
-    <!-- MAIN / HERO -->
-    <main id="hero">
-        <span class="hero-badge">Frontend Developer</span>
-        <h1>Hi, I'm Waqar Shahzad</h1>
-        <p class="hero-desc">
-            I build responsive and interactive websites using HTML,
-            CSS and JavaScript.
-        </p>
-        <a href="./Waqar-Shahzad.pdf" download class="cv-btn">
-            <i class="fa-solid fa-download"></i>
-            Download CV
-        </a>
-    </main>
+body {
+      display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 
-    <!-- ABOUT -->
-    <section id="about" class="section-dark">
-        <div class="section-inner">
-            <span class="section-eyebrow">Who I am</span>
-            <h2>About Me</h2>
-            <p class="about-text">
-                Hi, I'm Waqar Shahzad, a passionate Frontend Developer and
-                Software Engineering student. I enjoy creating responsive,
-                user-friendly, and visually appealing websites using HTML,
-                CSS, JavaScript, and modern web technologies. I am
-                continuously learning and improving my skills to build
-                innovative digital experiences and solve real-world
-                problems through code.
-            </p>
-        </div>
-    </section>
+    background-color: #0d0d0d;
+    color: #f0ede6;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <div class="section-inner">
-            <span class="section-eyebrow">What I work with</span>
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-box"><i class="fa-brands fa-html5"></i> HTML</div>
-                <div class="skill-box"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-                <div class="skill-box"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
-                <div class="skill-box"><i class="fa-brands fa-js"></i> JavaScript</div>
-                <div class="skill-box"><i class="fa-brands fa-react"></i> React.js</div>
-                <div class="skill-box"><i class="fa-brands fa-php"></i> PHP</div>
-            </div>
-        </div>
-    </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section-dark">
-        <div class="section-inner">
-            <span class="section-eyebrow">Academic Background</span>
-            <h2>Education</h2>
-            <div class="edu-list">
-                <div class="edu-card">
-                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
-                    <div class="edu-info">
-                        <h3>Matric</h3>
-                        <p>Allama Iqbal School</p>
-                    </div>
-                </div>
-                <div class="edu-card">
-                    <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
-                    <div class="edu-info">
-                        <h3>Intermediate</h3>
-                        <p>KIPS College, Kasur</p>
-                    </div>
-                </div>
-                <div class="edu-card">
-                    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div class="edu-info">
-                        <h3>BSc Software Engineering</h3>
-                        <p>Punjab Tianjin University of Technology</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <div class="section-inner">
-            <span class="section-eyebrow">What I've Built</span>
-            <h2>Projects</h2>
-            <div class="projects-grid">
+h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
 
-                <article class="project-card">
-                    <h3>Food Delivery System</h3>
-                    <p>A responsive Food Delivery Website built with HTML, CSS, and JavaScript. Users can browse menus,
-                        add items to cart, and place orders through an interactive interface.</p>
-                    <div class="tag-row">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">Bootstrap</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">MySQL</span>
-                    </div>
-                </article>
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
 
-                <article class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>A responsive Personal Portfolio Website built with HTML and CSS to showcase skills, education,
-                        projects, and contact information.</p>
-                    <div class="tag-row">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </article>
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
 
-                <article class="project-card">
-                    <h3>Rock Paper Scissors Game</h3>
-                    <p>A responsive Rock Paper Scissors game built with HTML, CSS, and JavaScript. Play against the
-                        computer with DOM manipulation and random choice generation.</p>
-                    <div class="tag-row">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">Bootstrap</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </article>
+p {
+    color: #b0ad9e;
+}
 
-            </div>
-        </div>
-    </section>
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-    <!-- CONTACT -->
-    <section id="contact" class="section-dark">
-        <div class="section-inner">
-            <span class="section-eyebrow">Get In Touch</span>
-            <h2>Contact</h2>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <span class="contact-label">Email</span>
-                        <p>waqar@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        <span class="contact-label">Phone</span>
-                        <p>0303-34344</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <i class="fa-brands fa-github"></i>
-                    <div>
-                        <span class="contact-label">GitHub</span>
-                        <p>github.com/waqar</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <div>
-                        <span class="contact-label">LinkedIn</span>
-                        <p>linkedin.com/in/waqar</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Waqar Shahzad &mdash; All Rights>
+
+.section-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 72px 0;
+}
+
+.section-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6b9fff;
+    margin-bottom: 10px;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(13, 13, 13, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f0ede6;
+    text-decoration: none;
+}
+
+.nav-logo span {
+    color: #6b9fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #888;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #f0ede6;
+}
+
+
+
+#hero {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 100px 24px 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hero-badge {
+    display: inline-block;
+    font-size: 12px;
+    background-color: rgba(107, 159, 255, 0.12);
+    color: #6b9fff;
+    border: 0.5px solid rgba(107, 159, 255, 0.35);
+    border-radius: 30px;
+    padding: 5px 14px;
+    letter-spacing: 0.06em;
+}
+
+.hero-desc {
+    font-size: 1.05rem;
+    max-width: 480px;
+    color: #9a9890;
+}
+
+.cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    padding: 12px 26px;
+    background-color: #6b9fff;
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+.cv-btn:hover {
+    background-color: #91b5ff;
+    transform: translateY(-1px);
+}
+
+
+
+.section-dark {
+    background-color: #141414;
+}
+
+
+
+.about-text {
+    font-size: 15px;
+    max-width: 640px;
+    line-height: 1.85;
+    color: #9a9890;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    font-size: 14px;
+    color: #d0cec7;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.skill-box:hover {
+    border-color: #6b9fff;
+    color: #6b9fff;
+}
+
+.skill-box i {
+    font-size: 18px;
+    color: #6b9fff;
+}
+
+
+
+.edu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.edu-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: #1c1c1c;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+
+.edu-card:hover {
+    border-color: rgba(107, 159, 255, 0.4);
+}
+
+.edu-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: rgba(107, 159, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.edu-icon i {
+    font-size: 18px;
+    color: #6b9fff;
+}
+
+.edu-info h3 {
+    font-size: 15px;
+    color: #f0ede6;
+    margin-bottom: 2px;
+}
+
+.edu-info p {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 22px;
+    background-color: #1c1c1c;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+    border-color: rgba(107, 159, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+.project-card h3 {
+    font-size: 16px;
+    color: #f0ede6;
+}
+
+.project-card p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.65;
+    flex: 1;
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.tag {
+    font-size: 11px;
+    background-color: rgba(107, 159, 255, 0.1);
+    color: #6b9fff;
+    border: 0.5px solid rgba(107, 159, 255, 0.25);
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background-color: #1c1c1c;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+
+.contact-card:hover {
+    border-color: rgba(107, 159, 255, 0.4);
+}
+
+.contact-card i {
+    font-size: 22px;
+    color: #6b9fff;
+    flex-shrink: 0;
+}
+
+.contact-label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #555;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.contact-card p {
+    font-size: 13px;
+    color: #d0cec7;
+    margin: 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 24px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.07);
+    font-size: 13px;
+    color: #444;
+}
+
+/* ── Hamburger Button ── */
+.ham-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 6px;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ham-btn span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #f0ede6;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+
+/* ── Mobile Media Query ── */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 14px 20px;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    /* Hamburger mobile pe dikhao */
+    .ham-btn {
+        display: flex;
+    }
+
+    /* Links mobile pe chhupa do */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+        padding: 12px 0;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    /* Click karne pe dikha do */
+    .nav-links.open {
+        display: flex;
+    }
+
+    #hero {
+        padding: 60px 20px 50px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
